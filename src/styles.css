@@ -1,0 +1,6 @@
+.menu li a{
+    outline:none;
+}
+a{
+    outline:none !important;
+}

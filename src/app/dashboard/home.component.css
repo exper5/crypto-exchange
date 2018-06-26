@@ -1,0 +1,431 @@
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'FontAwesome';  /* essential for enabling glyphicon */
+    content: "\f078";    /* adjust as needed, taken from bootstrap.css */
+    float: left;        /* adjust as needed */
+    color: grey;  
+    padding-right:30px;
+    font-size: 18px;
+    width: 0.8rem;
+    opacity: 0.6;
+    margin-right: 2px;
+    margin-left: 5px;
+    cursor: auto;   
+    padding-top:5px;    /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f054";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.dashboard {
+    padding-top: 100px;
+    background-color: #2e3b42;
+    padding-bottom: 50px;
+}
+.col-md-4.acc a {
+    color: white;
+}
+.panel-title {
+    padding: 0px 25px;
+
+}
+.panel-body {
+    color: white;
+    padding: 10px 30px;
+}
+.panel.panel-default {
+
+   
+    background: #1b262d;
+    border: 1px solid #1b262d;
+    margin-bottom: 0.4rem;
+    border-radius: 3px;
+
+}
+.panel-heading {
+    border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+    margin: 0;
+        margin-right: 0px;
+    margin-right: 0;
+    height: 32px;
+    line-height: 28px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    cursor: pointer;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: .9rem;
+
+}
+.accordion-toggle:hover {
+    text-decoration: none;
+}
+/* .panel-heading[_ngcontent-c2] .accordion-toggle[_ngcontent-c2]::after{
+    
+    float:left !important;
+} */
+a.sort-by { 
+	padding-right: 18px;
+	position: relative;
+}
+a.sort-by:before,
+a.sort-by:after {
+	border: 4px solid transparent;
+	content: "";
+	display: block;
+	height: 0;
+	right: 5px;
+	top: 50%;
+	position: absolute;
+	width: 0;
+}
+a.sort-by:before {
+	border-bottom-color: #666;
+	margin-top: -9px;
+}
+a.sort-by:after {
+	border-top-color: #666;
+	margin-top: 1px;
+}
+.accordion-toggle {
+    font-size: 15px;
+}
+.coin {
+    background: #1b262d;
+    color: white;
+    margin-bottom: 6px;
+}
+.col-info img {
+    width: 65px;
+    height:65px;
+    margin-top: 20px;
+}
+.table-responsive{
+    padding: 0 20px;
+}
+.table td, .table th{
+    border:0px;
+}
+.table-responsive td {
+    font-size: 12px;
+}
+.table td {
+    text-align: center;
+    padding: 5px;
+}
+.col-md-3.vol, .col-md-3.name, .col-md-3.last, .col-md-3.hours {
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#ticker-search-input {
+    width: 100%;
+    border: 1px solid #384952;
+    background: #2c3940;
+}
+.ui-dropdown__button {
+    width: 100%;
+    border: 1px solid #384952;
+    background: #2c3940;
+    color: white;
+}
+.searchtit {
+    margin: 6px 9px 20px;
+    display: flex;
+}
+.col-md-3.vol {
+  text-align: center;
+  font-size: 11px;
+}
+.col-md-3.coinlogo img {
+    width: 15px;
+}
+.ticket.icon {
+    margin-left: 1px;
+    margin-right: 7px;
+}
+.col-md-3.coinlogo {
+    display: flex;
+   
+}
+.col-md-3.coinlast {
+    font-size: 12px;
+    text-align: center;
+
+}
+.coinlists {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200px;
+}
+.col-md-3.coinvol, .col-md-3.coinlogo, .col-md-3.coinhrs, .col-md-3.coinlast{
+    line-height: normal;
+    justify-content: center; /* align horizontal */
+align-items: center;
+font-size: 11px;
+}
+
+
+.selectdiv {
+    position: relative;
+    /*Don't really need this just for demo styling*/
+    
+    float: left;
+    min-width: 200px;
+    margin: 50px 33%;
+  }
+  
+  /* IE11 hide native button (thanks Matt!) */
+  select::-ms-expand {
+  display: none;
+  }
+  
+  .selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    /*Adjust for position however you want*/
+    
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+    
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
+ 
+.limitselecctor {
+    width: 100%;
+}
+.col-md-6.filt label {
+    margin: 0;
+}
+.limitselecctor[_ngcontent-c2] {
+    width: 100%;
+    padding: 0px 0px 8px 26px;
+    margin-top: 6px;
+    color: #A4A9AC;
+    border: 1px solid #384952;
+    background: #2c3940;
+}
+*:focus {
+    outline: none;
+}
+a {
+    outline: 0;
+ }
+ object, embed { 
+    outline: 0;
+  }
+  select::-moz-focus-inner  { 
+      outline: none !important;
+      color: rgba(0,0,0,0);
+    text-shadow: 0 0 0 #000;
+ }
+.bfx-green-text {
+    color: #7a9c4a !important;
+    opacity: .4;
+    padding-right: 7px;
+}
+.bfx-green-text:hover {
+    opacity: 1;
+}
+.icons {
+    float: right;
+}
+.col-md-6.pricen input, .col-md-6.amnt input {
+    width: 100%;
+}
+.col-md-6.pricen, .col-md-6.amnt{
+    margin-top: 15px;
+} 
+    input{
+        border: 1px solid #384952;
+        background: #2c3940;
+        color:#A4A9AC;
+    }
+    .priamt {
+        font-size: 13px;
+        color: #A4A9AC;
+    }
+
+    .fa.fa-circle.bfx-red-text.ui-buysellindicator.hoverable {
+        color: red;
+        opacity: 0.4;
+    
+    }
+    .fa.fa-circle.bfx-red-text.ui-buysellindicator.hoverable:hover {
+        opacity: 1 !important;
+        color: red;
+    }
+    #dvPassport {
+        margin-top: 10px;
+    }
+    #buyButton {
+        background-color: #526c2e;
+        color: #dadfd3;
+        text-align: center;
+        cursor: pointer;
+    }
+    #sellButton {
+        background-color: #7b1a1f;
+        color: #dfc4c5;
+        text-align: center;
+        cursor: pointer;
+    }
+    .col-md-6.buy, .col-md-6.sell {
+        margin-top: 10px;
+    }
+    .col-md-3.ballogo img {
+
+        width: 20px;
+        height: 20px;
+    
+    }
+    .col-md-3.balfunding, .col-md-3.balmargin, .col-md-3.balexchange  {
+        text-align: right;
+    }
+    .panel-body.new {
+        padding: 10px 15px;
+    }
+    .balrow {
+        background: #1f2b33;
+    }
+    .balrow:hover {
+        background-color: #494d50;
+    }
+    .sub-items a {
+        padding: 10px;
+    }
+
+    /* inbox popup css*/
+    .popup-overlay{
+        /*Hides pop-up when there is no "active" class*/
+        
+        visibility: hidden;
+        position: relative;
+        background: #1b262d;
+        padding: 0 35px;
+        width: 100%;
+        height: 5%;
+        
+      }
+      .popup-overlay.active{
+        /*displays pop-up when "active" class is present*/
+        visibility:visible;
+        text-align:center;
+      }
+      
+      .popup-content {
+        /*Hides pop-up content when there is no "active" class */
+       visibility:hidden;
+      }
+      
+      .popup-content.active {
+        /*Shows pop-up content when "active" class is present */
+        visibility:visible;
+      }
+      .btn.overlay-btn.right.overlay-ledger-link {
+        padding: 0;
+        text-align: center;
+        line-height: 28px;
+        height: 28px;
+        font-size: 12px;
+        background-color: #284556;
+        border: 0;
+        border-radius: 0;
+    }
+    .col-md-12.firstbut {
+        margin: 0 auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .btn.overlay-btn.right.overlay-ledger-link.new {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .col-md-6.close {
+      text-align: right;
+    }
+    /* inbox popup end */
+    .sum-items span {
+        color: white;
+        padding: 10px;
+    }
+    .nav.nav-tabs li {
+        padding: 0 10px;
+        text-decoration: none;
+        border: none;
+    }
+    .nav.nav-tabs{
+    border: none;
+    }
+    .col-md-8.homebtc {
+        font-size: 13px;
+    }
+    .col-md-4.homeval {
+        text-align: right;
+        font-size: 13px;
+    }
+    .col-md-12.homeliq {
+        font-size: 13px;
+        text-align: center;
+    }
+    #menu1 {
+        font-size: 13px;
+    }
+    .row.menuf:hover, .row.menusec:hover {
+        background-color: #23313a;
+        color: #d1d4d5;
+    }
+    .col-md-2.bna, .col-md-2.bnan, .col-md-2.bprice{
+        text-align: right;
+    }
+   
+    .nav.nav-tabs li a:hover {
+        text-decoration: none;
+    }
+    #home, #menu1 {
+        border: 0;
+    }
+    .active.show {
+        border-bottom: 1px solid #fff;
+    }
+    .ordic span {
+        color: white;
+        padding: 10px;
+    }

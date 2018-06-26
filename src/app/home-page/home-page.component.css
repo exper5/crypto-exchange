@@ -1,0 +1,90 @@
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+}
+.slider-video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.block-volume {
+    background: #eee;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 35px;
+    text-align: center;
+}
+.desc{
+    font-size: 14px;
+    opacity: 0.5;
+}
+.homeabout, .chart {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.drag {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+#siteWrapper .mainHeader{display:none !important;}
+.overlay {
+    background: rgba(0, 0, 0, 0.59);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+.overlay h2 {
+    text-align: center;
+    padding-bottom:15px;
+}
+.open, .demo {
+    width: 275px;
+    height: 50px;
+    text-align: center;
+    padding: 15px 50px;
+    font-size: 15px;
+    margin: 0 0 9px 0;
+    border-radius: 2px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    background-color: #678e2f;
+    color: #fff;
+    border: none;
+    transition: background-color 125ms ease;
+}
+.demo{
+    background-color: #1d313e;
+}
+.open{margin-right:12px !important}
+.col-md-6.but {
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .videoWrapper {
+        padding-top: 47% !important;
+    }
+.overlay h2 {
+  font-size: 15px !important;
+}
+.open, .demo {
+  width: 134px !important;
+  height: 100%;
+  padding: 9px 3px !important;
+  margin: 0 0 38px 0 !important;
+
+}
+}
