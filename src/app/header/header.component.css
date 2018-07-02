@@ -199,3 +199,48 @@
 .toplogin {
   padding-right: 10px;
 }
+.login100-form-logo {
+  font-size: 60px;
+  color: #333333;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 120px;
+  height: 120px; */
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 0 auto;
+}
+.zmdi, .zmdi1 {
+  display: inline-block;
+  font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.zmdi.zmdi-landscape::before {
+
+  font-family: FontAwesome;
+  content: "\f007";
+  color:white;
+
+}
+.zmdi1.zmdi-landscape1::before {
+
+  font-family: FontAwesome;
+  content: "\f234";
+  color:white;
+
+}
+.modal-header{
+  border:0px !important;
+}
+.modal-header .close{
+  margin:0 !important;
+  padding:0 !important;
+}

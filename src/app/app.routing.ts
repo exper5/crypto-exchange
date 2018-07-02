@@ -9,11 +9,11 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 
 const appRoutes: Routes = [
-    { path: '', component: HomePageComponent, canActivate: [AuthGuard] },
+    { path: '', component: HomePageComponent},
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'Home', component: HomePageComponent },
-    { path: 'dashboard', component: HomeComponent },
+    { path: 'dashboard', component: HomeComponent, canActivate: [AuthGuard]  },
   
   
 
