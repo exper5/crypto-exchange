@@ -25,7 +25,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { SumPipe } from './_pipes/sum.pipe';
 import { PieDataService } from './_services/pie-data.service';
-
+import { TestportComponent } from './testport/testport.component';
+// import { MdMenuModule, MdButtonModule, MdIconModule, MdCardModule, MdSidenavModule } from '@angular/material';
 
 
 
@@ -35,8 +36,9 @@ import { PieDataService } from './_services/pie-data.service';
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        routing
-    ],
+        routing,
+        // MdSidenavModule
+        ],
     declarations: [
         AppComponent,
         AlertComponent,
@@ -51,6 +53,7 @@ import { PieDataService } from './_services/pie-data.service';
         PortfolioComponent,
         PieChartComponent,
         SumPipe,
+        TestportComponent,
        
      
     
@@ -60,6 +63,7 @@ import { PieDataService } from './_services/pie-data.service';
         AlertService,
         AuthenticationService,
         PieDataService,
+       
         UserService,
         {
             provide: HTTP_INTERCEPTORS,

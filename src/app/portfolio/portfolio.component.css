@@ -219,9 +219,9 @@ label:before {
     display: flex;
     margin-top: 30px;
 }
-.droplistmain div {
-    margin: 0 10px;
-}
+/* .droplistmain div {
+     margin: 0 10px; 
+} */
 .baltxt {
     padding-top: 20px;
 }
@@ -235,6 +235,30 @@ label:before {
   background-color: #1b262d !important;
   border:0 !important
 }
+.cryptoimg{
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.col-md-7.cryptotable {
+  text-align: initial;
+}
+.new {
+  width: 100%;
+  border: 1px solid #384952;
+  background: #2c3940;
+  color: white;
+}
+.fa.fa-search {
+  float: right;
+  margin-right: 6px;
+  margin-top: -23px;
+  position: relative;
+  z-index: 2;
+  color: #848484e6;
+}
+
 /* .legend{
   display:inline-block !important;
 } */
