@@ -3,6 +3,11 @@ import { first } from 'rxjs/operators';
 declare var $ :any;
 import { User } from '../_models';
 import { UserService } from '../_services';
+import {Observable} from 'rxjs';
+
+
+
+
 
 @Component({
     templateUrl: 'home.component.html',
@@ -11,9 +16,57 @@ import { UserService } from '../_services';
 export class HomeComponent implements OnInit {
     currentUser: User;
     users: User[] = [];
+    stocks:any[]=[];
+    stocks1:any[]=[];
 
     constructor(private userService: UserService) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+        for(let i=0;i<20;i++){
+            let tempStock={
+                code : Math.ceil(Math.random()*10500),
+                ask : Math.ceil(Math.random()*10700),
+                bid : Math.ceil(Math.random()*10200)
+            }
+
+            this.stocks.push(tempStock);
+        }
+
+        let poll = ()=>{
+            for (var i = 0; i < this.stocks.length; i++) {
+                this.stocks[i].bid += Math.random()<.5 ? 5 : -5;
+                this.stocks[i].code += Math.random()<.5 ? 5 : -5;
+                this.stocks[i].ask += Math.random()<.5 ? -5 : 5;
+            }
+            setTimeout(poll , 1000);
+        }
+
+        poll();
+
+
+
+        // trade history stock code
+        // for(let i=0;i<20;i++){
+        //     let tempStock1={
+        //         time : Math.ceil(Math.random()*10500),
+        //         price : Math.ceil(Math.random()*10700),
+        //         amount : Math.ceil(Math.random()*10200)
+        //     }
+
+        //     this.stocks.push(tempStock1);
+        // }
+
+        // let pollnew = ()=>{
+        //     for (var i = 0; i < this.stocks1.length; i++) {
+        //         this.stocks1[i].amount += Math.random()<.5 ? 5 : -5;
+        //         this.stocks1[i].time += Math.random()<.5 ? 5 : -5;
+        //         this.stocks1[i].price += Math.random()<.5 ? -5 : 5;
+        //     }
+        //     setTimeout(pollnew , 1000);
+        // }
+
+        // pollnew();
+        
     }
 
     ngOnInit() {
@@ -43,6 +96,9 @@ export class HomeComponent implements OnInit {
             $("#datalist").show();
             $(".popup-overlay").hide();
           });
+
+          //change background color of table
+          
     }
 
     deleteUser(id: number) {
@@ -57,3 +113,34 @@ export class HomeComponent implements OnInit {
         });
     }
 }
+
+@Component({
+    selector: 'app-calc',
+    template: `
+      
+      <div class="calculation">
+      <p class="buypricetxt" style="width:50%; float:left">Price:</p>
+      <p class="buyamntbox"> <input #num1 type="number" value="{{init.first}}" (input)="0" ></p>
+      <p class="buyamnt" style="width:50%; float:left">Amount</p>
+      <p class="buypricebox"> <input #num2 type="number" value="{{init.second}}" (input)="0" ></p>
+      </div>
+
+      <div>
+        <span style="width:50%; float:left;">Total: </span><input type="number" value="{{num1.valueAsNumber * num2.valueAsNumber}}">
+        
+      </div>
+      `
+  })
+  export class CalcComponent {
+  
+    get init(): any {
+      return {
+        first: 6346.01,
+        second: 0
+      };
+    }
+  
+    max(first: number, second: number): number {
+      return Math.max(first, second);
+    }
+  }

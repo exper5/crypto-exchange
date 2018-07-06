@@ -5,6 +5,7 @@ import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { AuthGuard } from './_guards';
 import { HomePageComponent } from './home-page/home-page.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'Home', component: HomePageComponent },
     { path: 'dashboard', component: HomeComponent, canActivate: [AuthGuard]  },
+    { path: 'portfolio', component:PortfolioComponent},
   
   
 

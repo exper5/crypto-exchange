@@ -1,0 +1,144 @@
+<section class="portfolio">
+
+<div class="container-fluid port">
+      <div class="row row-offcanvas row-offcanvas-left">
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Portfolio</a>
+            <a href="#" class="list-group-item">Profil</a>
+            <a href="#" class="list-group-item">Edit Account</a>
+            <a href="#" class="list-group-item">Logout</a>
+            <!-- <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a> -->
+          </div>
+        </div><!--/span-->
+        <div class="col-xs-12 col-sm-9 content">
+          <p class="pull-left">
+            <button type="button" class="hamburger btn-xs" data-toggle="offcanvas">&#9776;</button>
+            <!-- <button class="hamburger">&#9776;</button> -->
+             <!-- <button class="cross btn-xs">&#735;</button> -->
+             <button type="button" class="cross btn-xs" data-toggle="offcanvas">&#735;</button>
+          </p>
+  
+  <div class="text-center">
+    <h3 class="baltxt">Currrent Balance</h3>
+
+    <div class="newpie">
+      
+    </div>
+
+    <div class="droplistmain">
+    <div class="droplist">
+        <label>
+            <select>
+              <option value="0">Show 0 balances</option>
+              <option value="1">BTC</option>
+              <option value="2">ETH</option>
+              <option value="3">XRP</option>
+              <option value="4">Cloak</option>
+              <option value="5">Dent</option>
+              <option value="6">KMD</option>
+              <option value="7">ETC</option>
+              <option value="8">NPXS</option>
+              <option value="9">USDT</option>
+              <option value="10">EOSD</option>
+              <option value="11">QKC</option>
+              <option value="12">XVG</option>
+            </select>
+        </label>
+      </div>
+
+      <div class="secdrop">
+          <label>
+              <select>
+                <option value="0">Value</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                
+              </select>
+          </label>
+        </div>
+
+       
+        <div class="thirddrop">
+            <label>
+                <select>
+                  <option value="0">Select Trend</option>
+                  <option value="1">2.2%</option>
+                  <option value="2">2.23%</option>
+                  <option value="3">3.2%</option>
+                  <option value="4">4.2%</option>
+                  <option value="5">24.2%</option>
+                  <option value="6">32.7%</option>
+                  <option value="7">45.2%</option>
+                  <option value="8">58.34%</option>
+                  
+                </select>
+            </label>
+          </div>
+          </div>
+      <!-- search table-->
+     
+        <div class="buylist">
+        <div class="row">
+          <div class="col-md-7">
+              <table class="table striped">
+                  <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Amount</th>
+                        <th>Value</th>
+                        <th>Price</th>
+                        <th>Trend</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>Alvin</td>
+                      <td>Eclair</td>
+                      <td>$0.87</td>
+                    </tr>
+                    <tr>
+                      <td>Alan</td>
+                      <td>Jellybean</td>
+                      <td>$3.76</td>
+                    </tr>
+                    <tr>
+                      <td>Jonathan</td>
+                      <td>Lollipop</td>
+                      <td>$7.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+          <div class="col-md-5">
+              <div class='card'>
+                  <app-pie-chart [data]='data' [colours]='colours'></app-pie-chart>
+                </div>
+          </div>
+          </div>
+
+          
+        <!-- search end-->
+  </div>
+  </div>
+  
+
+      </div><!--/row-->
+
+</div>
+</div><!-- /.container -->
+</section>

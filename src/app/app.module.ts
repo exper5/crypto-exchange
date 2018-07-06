@@ -19,7 +19,13 @@ import { RegisterComponent } from './register';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { HomeComponent } from './dashboard';
+import { HomeComponent, CalcComponent } from './dashboard';
+import { HighlighterDirective } from './highlighter.directive';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { SumPipe } from './_pipes/sum.pipe';
+import { PieDataService } from './_services/pie-data.service';
+
 
 
 
@@ -40,6 +46,11 @@ import { HomeComponent } from './dashboard';
         HeaderComponent,
         FooterComponent,
         HomePageComponent,
+        CalcComponent,
+        HighlighterDirective,
+        PortfolioComponent,
+        PieChartComponent,
+        SumPipe,
        
      
     
@@ -48,6 +59,7 @@ import { HomeComponent } from './dashboard';
         AuthGuard,
         AlertService,
         AuthenticationService,
+        PieDataService,
         UserService,
         {
             provide: HTTP_INTERCEPTORS,

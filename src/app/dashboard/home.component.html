@@ -1,403 +1,279 @@
-
-
 <section class="dashboard">
-<div class="container-fluid">
-<div class="col-md-12 dashacc">
-  <div class="row">
-    
-    <div class="col-md-4 col-sm-12 acc">
-  <div class="coin">
-    <div class="table-responsive">
-      <table class="table">
-          <tr><td class="col-info" rowspan="3" style="width: 44px;">
-              <img src="assets/newbit.png">
-          </td>
-          <td class="col-info" rowspan="1" style="width: 136px;"><h5><span><span class=""><span><span>BTC</span></span><span class="show-soft">/</span><span><span>USD</span></span></span></span>
+    <div class="container-fluid">
+        <div class="col-md-12 dashacc">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-12 acc">
+                    <div class="coin">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <td class="col-info" rowspan="3" style="width: 44px;">
+                                        <img src="assets/newbit.png">
+                                    </td>
+                                    <td class="col-info" rowspan="1" style="width: 136px;">
+                                        <h5><span><span class=""><span><span>BTC</span></span><span class="show-soft">/</span><span><span>USD</span></span></span></span>
             </h5></td>
-            <td class="col-info" rowspan="1"><h5><span><span><span class=" " style="padding: 0px 2px;">6,160.8</span></span><span><span class="show50 show-smaller"></span></span></span></h5></td>
-          </tr>
-          <tr>
-              <td class="col-info" rowspan="1" style="width: 18px;"><span class="show-soft">VOL</span>&nbsp;<span class=" ui-tooltip--cursor-help ui-tooltip" data-tip="true" data-for="tooltip130" currentitem="false"><span><span><span class=" " style="padding: 0px 2px;">212,796,369</span></span><span><span class="show50 show-smaller"></span></span></span></span>&nbsp;<span class="show-soft">USD</span></td>
-              <td class="col-info" rowspan="1"><span class="bfx-red-text"><span><span><span class=" " style="padding: 0px 2px;">538.10</span></span><span><span class="show50 show-smaller"></span></span></span>
-              (<span><span><span class=" " style="padding: 0px 2px;">8.01</span></span><span><span class="show50 show-smaller"></span></span></span>%)</span></td>
-              </tr>
-              <tr>
-                  <td class="col-info" rowspan="1" style="width: 18px;"><span class="show-soft">LOW</span>&nbsp;<span><span><span class=" " style="padding: 0px 2px;">6,075.0</span></span><span><span class="show50 show-smaller"></span></span></span></td><td class="col-info" rowspan="1"><span class="show-soft">HIGH</span>&nbsp;<span><span><span class=" " style="padding: 0px 2px;">6,750.0</span></span><span><span class="show50 show-smaller"></span></span></span></td>
-                  </tr>
-        </table>
-    </div>
-  </div>      
-<div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
+                                    <td class="col-info" rowspan="1">
+                                        <h5><span><span><span class=" " style="padding: 0px 2px;">6,160.8</span></span><span><span class="show50 show-smaller"></span></span></span></h5></td>
+                                </tr>
+                                <tr>
+                                    <td class="col-info" rowspan="1" style="width: 18px;"><span class="show-soft">VOL</span>&nbsp;<span class=" ui-tooltip--cursor-help ui-tooltip" data-tip="true" data-for="tooltip130" currentitem="false"><span><span><span class=" " style="padding: 0px 2px;">212,796,369</span></span><span><span class="show50 show-smaller"></span></span>
+                                        </span>
+                                        </span>&nbsp;<span class="show-soft">USD</span></td>
+                                    <td class="col-info" rowspan="1"><span class="bfx-red-text"><span><span><span class=" " style="padding: 0px 2px;">538.10</span></span><span><span class="show50 show-smaller"></span></span>
+                                        </span>
+                                        (<span><span><span class=" " style="padding: 0px 2px;">8.01</span></span><span><span class="show50 show-smaller"></span></span>
+                                        </span>%)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-info" rowspan="1" style="width: 18px;"><span class="show-soft">LOW</span>&nbsp;<span><span><span class=" " style="padding: 0px 2px;">6,075.0</span></span><span><span class="show50 show-smaller"></span></span>
+                                        </span>
+                                    </td>
+                                    <td class="col-info" rowspan="1"><span class="show-soft">HIGH</span>&nbsp;<span><span><span class=" " style="padding: 0px 2px;">6,750.0</span></span><span><span class="show50 show-smaller"></span></span>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default ticket">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
               <a class="accordion-toggle" data-toggle="collapse" href="#collapseOne">
                 Tickets
               </a>
             </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse show">
-            <div class="panel-body">
-              <div class="row">
-                <!--search box-->
-                <div class="searchtit">
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                  <div class="tickerlist__controls">
-                    <div class="tickerlist__search">
-                      <input class="tickerlist__searchinput" id="ticker-search-input" type="text" autocomplete="off" value="">
-                      <div class="tickerlist__searchicon"><span class="show50"></span></div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6">
-                    <div class=""><div class="ui-dropdown__wrapper">
-                      <div class="o-type-select faux-select ui-dropdown__buttoncontainer">
-                        <div class="ui-dropdown__buttonwrap">
-                          <!-- <input type="text" tabindex="0" class="ui-dropdown__button" value="ANY"> -->
-                          <select  class="ui-dropdown__button" name="carlist" form="carform">
-                              <option value="volvo">Volvo</option>
-                              <option value="saab">Saab</option>
-                              <option value="opel">Opel</option>
-                              <option value="audi">Audi</option>
-                            </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                <!--search box end-->
-                <div class="col-md-12 col-sm-12">
-                  <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12 name">Name<a href="" class="sort-by"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-12 last">Last<a href="" class="sort-by"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-12 hours">24 hrs<a href="" class="sort-by"></a></div>
-                <div class="col-md-3 col-sm-3 col-xs-12 vol">Vol usd<a href="" class="sort-by"></a></div>
-                </div>
-                </div>
-                </div>
-                
-                <!--list of bitcoine-->
-                <div class="coinlists">
-                  <div class="col-md-12 col-sm-12 col-xs-12 coinimg">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-12 coinlogo">
-                      <div class="ticket icon">
-                      <img src="assets/zrx.png">
-                      </div>ZRX
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 coinlast">
-                      <p>171.0 USD</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 coinhrs">
-                        <p>10.57%</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 coinvol">
-                        <p>20,21,654</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 coinlogo">
-                        <div class="ticket icon">
-                        <img src="assets/zrx.png">
-                        </div>ZRX
-                      </div>
-                      <div class="col-md-3 col-sm-3 coinlast">
-                        <p>171.0 USD</p>
-                      </div>
-                      <div class="col-md-3 col-sm-3 coinhrs">
-                          <p>10.57%</p>
-                      </div>
-                      <div class="col-md-3 col-sm-3 coinvol">
-                          <p>20,21,654</p>
-                      </div>
-                      <div class="col-md-3 col-sm-3 coinlogo">
-                          <div class="ticket icon">
-                          <img src="assets/zrx.png">
-                          </div>ZRX
-                        </div>
-                        <div class="col-md-3 col-sm-3 coinlast">
-                          <p>171.0 USD</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3 coinhrs">
-                            <p>10.57%</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3 coinvol">
-                            <p>20,21,654</p>
-                        </div>
-                        <div class="col-md-3 col-sm-3 coinlogo">
-                            <div class="ticket icon">
-                            <img src="assets/zrx.png">
-                            </div>ZRX
-                          </div>
-                          <div class="col-md-3 col-sm-3 coinlast">
-                            <p>171.0 USD</p>
-                          </div>
-                          <div class="col-md-3 col-sm-3 coinhrs">
-                              <p>10.57%</p>
-                          </div>
-                          <div class="col-md-3 col-sm-3 coinvol">
-                              <p>20,21,654</p>
-                          </div>
-                          <div class="col-md-3 col-sm-3 coinlogo">
-                              <div class="ticket icon">
-                              <img src="assets/zrx.png">
-                              </div>ZRX
                             </div>
-                            <div class="col-md-3 col-sm-3 coinlast">
-                              <p>171.0 USD</p>
+                            <div id="collapseOne" class="panel-collapse collapse show">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <!--search box-->
+                                        <div class="searchtit">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="tickerlist__controls">
+                                                    <div class="tickerlist__search">
+                                                        <input class="tickerlist__searchinput" id="ticker-search-input" type="text" autocomplete="off" value="">
+                                                        <div class="tickerlist__searchicon"><span class="show50"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <div class="">
+                                                    <div class="ui-dropdown__wrapper">
+                                                        <div class="o-type-select faux-select ui-dropdown__buttoncontainer">
+                                                            <div class="ui-dropdown__buttonwrap">
+                                                                <!-- <input type="text" tabindex="0" class="ui-dropdown__button" value="ANY"> -->
+                                                                <fieldset class="cryptotype">
+                                                                    <div>
+                                                                        <input type="radio" id="huey" name="drone" checked />USD
+
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <input type="radio" id="dewey" name="drone" />BTC
+
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <input type="radio" id="louie" name="drone" />ETH
+
+                                                                    </div>
+
+                                                                </fieldset>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--search box end-->
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-12 name">Name
+                                                    <a href="" class="sort-by"></a>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12 last">Last
+                                                    <a href="" class="sort-by"></a>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12 hours">24 hrs
+                                                    <a href="" class="sort-by"></a>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12 vol">Vol usd
+                                                    <a href="" class="sort-by"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--list of bitcoine-->
+                                    <div class="coinlists">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 coinimg">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-3 col-xs-12 coinlogo">
+                                                    <div class="ticket icon">
+                                                        <img src="assets/zrx.png">
+                                                    </div>ZRX
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12 coinlast">
+                                                    <p>171.0 USD</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12 coinhrs">
+                                                    <p>10.57%</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12 coinvol">
+                                                    <p>20,21,654</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 col-xs-12 coinlogo">
+                                                    <div class="ticket icon">
+                                                        <img src="assets/zrx.png">
+                                                    </div>ZRX
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlast">
+                                                    <p>171.0 USD</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinhrs">
+                                                    <p>10.57%</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinvol">
+                                                    <p>20,21,654</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlogo">
+                                                    <div class="ticket icon">
+                                                        <img src="assets/zrx.png">
+                                                    </div>ZRX
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlast">
+                                                    <p>171.0 USD</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinhrs">
+                                                    <p>10.57%</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinvol">
+                                                    <p>20,21,654</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlogo">
+                                                    <div class="ticket icon">
+                                                        <img src="assets/zrx.png">
+                                                    </div>ZRX
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlast">
+                                                    <p>171.0 USD</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinhrs">
+                                                    <p>10.57%</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinvol">
+                                                    <p>20,21,654</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlogo">
+                                                    <div class="ticket icon">
+                                                        <img src="assets/zrx.png">
+                                                    </div>ZRX
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlast">
+                                                    <p>171.0 USD</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinhrs">
+                                                    <p>10.57%</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinvol">
+                                                    <p>20,21,654</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlogo">
+                                                    <div class="ticket icon">
+                                                        <img src="assets/zrx.png">
+                                                    </div>ZRX
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlast">
+                                                    <p>171.0 USD</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinhrs">
+                                                    <p>10.57%</p>
+                                                </div>
+                                                <div class="col-md-3 coinvol">
+                                                    <p>20,21,654</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlogo">
+                                                    <div class="ticket icon">
+                                                        <img src="assets/zrx.png">
+                                                    </div>ZRX
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinlast">
+                                                    <p>171.0 USD</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinhrs">
+                                                    <p>10.57%</p>
+                                                </div>
+                                                <div class="col-md-3 col-sm-3 coinvol">
+                                                    <p>20,21,654</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end list of bit coins-->
+
+                                </div>
                             </div>
-                            <div class="col-md-3 col-sm-3 coinhrs">
-                                <p>10.57%</p>
-                            </div>
-                            <div class="col-md-3 col-sm-3 coinvol">
-                                <p>20,21,654</p>
-                            </div>
-                            <div class="col-md-3 col-sm-3 coinlogo">
-                                <div class="ticket icon">
-                                <img src="assets/zrx.png">
-                                </div>ZRX
-                              </div>
-                              <div class="col-md-3 col-sm-3 coinlast">
-                                <p>171.0 USD</p>
-                              </div>
-                              <div class="col-md-3 col-sm-3 coinhrs">
-                                  <p>10.57%</p>
-                              </div>
-                              <div class="col-md-3 coinvol">
-                                  <p>20,21,654</p>
-                              </div>
-                              <div class="col-md-3 col-sm-3 coinlogo">
-                                  <div class="ticket icon">
-                                  <img src="assets/zrx.png">
-                                  </div>ZRX
-                                </div>
-                                <div class="col-md-3 col-sm-3 coinlast">
-                                  <p>171.0 USD</p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 coinhrs">
-                                    <p>10.57%</p>
-                                </div>
-                                <div class="col-md-3 col-sm-3 coinvol">
-                                    <p>20,21,654</p>
-                                </div>
-                </div>
-              </div>
-            </div>
-                <!--end list of bit coins-->
-                
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a class="accordion-toggle" data-toggle="collapse" href="#collapseTwo">
-                Order Form
-              </a>
-            </h4>
-          </div>
-          <div id="collapseTwo" class="panel-collapse collapse show">
-            <div class="panel-body">
-              
-                  <div class="row">
-                    <div class="col-md-6 limitset">
-                        <select class="limitselecctor" required>
-                            <option value="">Limit</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                          </select>
-                    </div>
-                    <div class="col-md-6 filt">
-                        <label for="chkPassport">
-                            <input type="checkbox" id="chkPassport" />
-                            OCO
-                        </label>
-                        <label for="hidden">
-                            <input type="checkbox" id="hidden" />
-                            hidden
-                        </label>
-                        <label for="post-only">
-                            <input type="checkbox" id="post" />
-                            post-only
-                        </label>
-                    </div>
-                    </div>
-                    <!--limit end-->
-                  <div class="row">
-                    <div class="col-md-6 pricen">
-                      <span class="priamt">Price USD</span><span class="icons">
-                        <i class="fa fa-circle bfx-green-text ui-buysellindicator hoverable"></i>
-                            <i class="fa fa-circle bfx-red-text ui-buysellindicator hoverable"></i>
-                        
-                      </span>
-                        <input type="text" class="ui-labeledinput__input" name="of-field-price" value="6121.8">
-
-                        <div id="dvPassport" style="display: none">
-                            <span class="priamt">OCO STOP USD</span><span class="icons">
-                                <i class="fa fa-circle bfx-green-text ui-buysellindicator hoverable"></i>
-                                    <i class="fa fa-circle bfx-red-text ui-buysellindicator hoverable"></i>
-                              </span>
-                            <input type="text" id="txtPassportNumber" />
                         </div>
-                    </div>
-                    <div class="col-md-6 amnt">
-                        <span class="priamt">Amount BTC</span>
-                        <span class="icons">
-                          <i class="fa fa-circle bfx-green-text ui-buysellindicator hoverable"></i>
-                          <i class="fa fa-circle bfx-red-text ui-buysellindicator hoverable"></i> 
-                        </span>
-                        <input type="text" class="ui-labeledinput__input" name="of-field-price" value="6121.8">
-                    </div>
-                    </div>
-                    <!--biuttons start-->
-                  <div class="row">
-                    <div class="col-md-6 buy">
-                        <div id="buyButton" class="btn-green buy ui-button">Exchange Buy</div>
-                      </div>
-                      <div class="col-md-6 sell">
-                          <div id="sellButton"  class="btn-green sell ui-button">Exchange Buy</div>
-                        </div>
-                  </div>
-                 
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a class="accordion-toggle" data-toggle="collapse" href="#collapseThree">
-                Balances
-              </a>
-            </h4>
-            <div class="sub-items">
-                <!-- <a class="btn-flat center-align active" href="#" >
-                <i class="fa fa-list" style="font-size: 14px;"></i>
-                </a> 
-                <a class="btn-flat center-align" href="#" >
-                <i class="fa fa-list-ul" style="font-size: 14px;"></i>
-                </a> -->
-                <a class="btn-flat center-align" href="#">
-                <i class="fa fa-pie-chart" style="font-size: 14px;"></i>
-                </a>
-                </div>
-          </div>
-          <div id="collapseThree" class="panel-collapse collapse show">
-            <div class="panel-body new">
-              <div id="datalist">
-             <div class="row">
-               <div class="col-md-3"></div>
-               <div class="col-md-3 balexchange"><span class="open">Exchange</span></div>
-               <!-- <div class="col-md-3 balmargin"><span class="open">Margin</span></div>
-               <div class="col-md-3 balfunding"><span class="open">Funding</span></div> -->
-               </div>
-               
-                <div class="balrow">
-                    <div class="row">
-                <div class="col-md-3 ballogo"><img src="/assets/dollor.png"></div>
-                <div class="col-md-3 balexchange">00</div>
-                <div class="col-md-3 balmargin">00</div>
-                <div class="col-md-3 balfunding">00</div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-3 ballogo"><img src="/assets/newbit.png"></div>
-                <div class="col-md-3 balexchange">00</div>
-                <div class="col-md-3 balmargin">00</div>
-                <div class="col-md-3 balfunding">00</div>
-               
-                </div>
-               </div>
-
-               <!--inboxpopup-->
-               <div class="popup-overlay" style="display:none">
-                  <!--Creates the popup content-->
-                   <div class="popup-content">
-                      <div class="row">
-                        <div class="col-md-6 title">Margin Wallet</div>
-                        <div class="col-md-6 close"><i class="fa fa-close" style="font-size:28px;color:#70767a;"></i></div>
-                        <div class="col-md-12 firstbut">
-                            <a class="btn overlay-btn right overlay-ledger-link" style="width: 100%;">Ledger Entries</a>
-                        </div>
-                        <div class="col-md-6 secondbut">
-                            <a class="btn overlay-btn right overlay-ledger-link new" href="#" >Deposit</a>
-                        </div>
-                        <div class="col-md-6 thirdbut">
-                            <a class="btn overlay-btn right overlay-ledger-link new" href="#">Withdrawal</a>
-                        </div>
-                      </div>
-                      
-                     
-                     <!--popup's close button-->
-                         </div>
-                </div>
-                <!--Content shown when popup is not displayed-->
-                
-               <!--inbox popup end-->
-
-            </div>
-          </div>
-
-        </div>
-
-        <!--4th block start-->
-        <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <a class="accordion-toggle" data-toggle="collapse" href="#collapseFour">
-                 Summary
+                        <!-- order book start-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" href="#collapseSeven">
+                  ORDER BOOK
                 </a>
               </h4>
-              <div class="sum-items">
-                  <!-- <span class="sum mar" id="summar">Margin</span>
-                  <span class="sum fund"  id="sumfun">Funding</span> -->
-                  <ul class="nav nav-tabs">
-                      <li class="active"><a data-toggle="tab" href="#home" class="active show">Home</a></li>
-                      <li class="secme"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-                    </ul>
-                  </div>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse show">
-              <div class="panel-body new">
-                
-                  <div class="tab-content">
-                      <div id="home" class="tab-pane fade in active" style="opacity:1">
-                        
-                        <div class="row">
-                          <div class="col-md-8 homebtc">BTC/USD Tradable Balance</div>
-                          <div class="col-md-4 homeval">N/A</div>
-                          <div class="col-md-12 homeliq">LIQUIDATION</div>
-                          <div class="col-md-8 homebtc">BTC/USD Maintenance</div>
-                          <div class="col-md-4 homeval">15.00%</div>
-                          <div class="col-md-8 homebtc">Rquired Equity </div>
-                          <div class="col-md-4 homeval">0.00</div>
+                                <div class="ordic">
+                                    <span class="ordicons"><i class="fa fa-minus"></i></span>
+                                    <span class="ordicons"><i class="fa fa-plus"></i></span>
+                                    <span class="ordicons"><i class="fa fa-bell"></i></span>
+                                    <span class="ordicons"><i class="fa fa-gear"></i></span>
+                                    <span class="ordicons"><i class="fa fa-search-minus"></i></span>
+                                    <span class="ordicons"><i class="fa fa-search-plus"></i></span>
+
+                                </div>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse show">
+                                <div class="panel-body">
+                                  <!-- <img src="assets/order1.jpg">  -->
+                                  <div class="table-responsive">          
+                                      <table class="table">
+                                        <thead>
+                                          <tr class="orderhead">
+                                            <th>Price</th>
+                                            <th>Amount(USD)</th>
+                                            <th>Total(USD)</th>
+                                            
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let stock of stocks" class="list" >
+                                                <td [highlighter]="stock.code">{{ stock.code }}</td>
+                                                <td [highlighter]="stock.bid">{{ stock.bid }}</td>
+                                                <td [highlighter]="stock.ask">{{ stock.ask }}</td>
+                                            </tr>
+                                          
+                                        </tbody>
+                                      </table>
+                                      </div>
+                                    
+                                    <!--order book tabls start-->
+
+                                      
+                                    <!-- order book end-->
+                                </div>
+                            </div>
                         </div>
-                      </div>
-                      <div id="menu1" class="tab-pane fade">
-                        <div class="row menuf">
-                          <div class="col-md-6 busd">USD Taken</div>
-                          <div class="col-md-2 bprice">0.00</div>
-                          <div class="col-md-2 bnan">NaN%</div>
-                          <div class="col-md-2 bna">N/A</div>
-                          </div>
-                          <div class="row menusec">
-                          <div class="col-md-6 busd">USD Provided</div>
-                          <div class="col-md-2 bprice">0.00</div>
-                          <div class="col-md-2 bnan">NaN%</div>
-                          <div class="col-md-2 bna">N/A</div>
-                          </div>
-                        
-                      </div>
-                      </div>
-              </div>
-            </div>
-          </div>
-        <!--4th block end-->
-      </div>
-      </div>
-      <!--right sidebar-->
-      <div class="col-md-8 col-sm-12">
-          <!-- <h1>Hi {{currentUser.firstName}}!</h1>
+                        <!--order book end-->
+
+                    </div>
+                </div>
+                <!--right sidebar-->
+                <div class="col-md-8 col-sm-12">
+                    <!-- <h1>Hi {{currentUser.firstName}}!</h1>
           <p>You're logged in with Angular 6!!</p>
           <h3>All registered users:</h3>
           <ul>
@@ -407,40 +283,240 @@
               </li>
           </ul> -->
 
+                    <!--according start-->
+                    <div class="panel-group" id="accordion1">
 
-          <!--according start-->
-          <div class="panel-group" id="accordion1">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
+                        <!--btc chart start-->
+                        <div class="panel panel-default graph">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" href="#collapseFive">
                       CHART BTC/USD
                     </a>
                   </h4>
-                </div>
-                <div id="collapseFive" class="panel-collapse collapse show">
-                  <div class="panel-body">
-                    <!--chartcode-->
-                    <div class="btcwdgt-chart"></div>
-                    <!--chart code end-->
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a class="accordion-toggle" data-toggle="collapse" href="#collapseSix">
-                      POSITIONS(0)
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseSix" class="panel-collapse collapse show">
-                  <div class="panel-body">
-                    No active positions
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse show">
+                                <div class="panel-body">
+                                    <!--chartcode-->
+                                    <div class="btcwdgt-chart"></div>
+                                    <!--chart code end-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--btc chart end-->
+                        <div class="row">
+                            <div class="col-md-7">
+                                <!--Order form start-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a class="accordion-toggle" data-toggle="collapse" href="#collapseTwo">
+                                              Order Form
+                                            </a>
+                                       </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <!--buttons-->
+                                            <ul class="nav nav-tabs buysell">
+                                                <li class="active"><a class="show active" data-toggle="tab" href="#buy">Limit</a></li>
+                                                <li><a data-toggle="tab" href="#sell">Market</a></li>
+                                                <li><a data-toggle="tab" href="#stop">Stop Limit</a></li>
+                                            </ul>
+                                            <!--buttons respective tabs-->
+                                            <div class="tab-content">
+                                                <!--buy tab content-->
+                                                <div id="buy" class="tab-pane fade in active show">
+                                                    <div class="row">
+                                                        <div class="col-md-6 buycol">
+
+                                                            <h3>Buy</h3>
+
+                                                            <div class="but txt">
+                                                                <p class="buytxt">Buy KEY</p>
+                                                                <p class="bitwallet"><img src="assets/wallet.png">-USDT</p>
+                                                            </div>
+                                                            <div class="sum">
+                                                                <app-calc></app-calc>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-6 sellcol">
+
+                                                            <h3>Sell</h3>
+                                                            <div class="but txt">
+                                                                <p class="buytxt">Buy KEY</p>
+                                                                <p class="bitwallet"><img src="assets/wallet.png">-BTC</p>
+                                                            </div>
+                                                            <div class="sum">
+                                                                <app-calc></app-calc>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="sell" class="tab-pane fade">
+                                                    <div class="row">
+                                                        <div class="col-md-6 buycol">
+
+                                                            <h3>Buy</h3>
+
+                                                            <div class="but txt">
+                                                                <p class="buytxt">Buy KEY</p>
+                                                                <p class="bitwallet"><img src="assets/wallet.png">-USDT</p>
+                                                            </div>
+                                                            <div class="sum">
+                                                                <app-calc></app-calc>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-6 sellcol">
+
+                                                            <h3>Sell</h3>
+                                                            <div class="but txt">
+                                                                <p class="buytxt">Buy KEY</p>
+                                                                <p class="bitwallet"><img src="assets/wallet.png">-BTC</p>
+                                                            </div>
+                                                            <div class="sum">
+                                                                <app-calc></app-calc>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="stop" class="tab-pane fade">
+                                                    <div class="row">
+                                                        <div class="col-md-6 buycol">
+
+                                                            <h3>Buy</h3>
+
+                                                            <div class="but txt">
+                                                                <p class="buytxt">Buy KEY</p>
+                                                                <p class="bitwallet"><img src="assets/wallet.png">-USDT</p>
+                                                            </div>
+                                                            <div class="sum">
+                                                                <app-calc></app-calc>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-6 sellcol">
+
+                                                            <h3>Sell</h3>
+                                                            <div class="but txt">
+                                                                <p class="buytxt">Buy KEY</p>
+                                                                <p class="bitwallet"><img src="assets/wallet.png">-BTC</p>
+                                                            </div>
+                                                            <div class="sum">
+                                                                <app-calc></app-calc>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--end buy tab content-->
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--order form end -->
+
+                                <!-- active order start-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                      <a class="accordion-toggle" data-toggle="collapse" href="#collapseSix">
+                        Active Orders
+                      </a>
+                    </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <ul class="nav nav-tabs activeorders">
+
+                                                <li class="active"><a class="show active" data-toggle="tab" href="#positions">Positions</a></li>
+                                                <!-- <li><a data-toggle="tab" href="#closedposition">Closed Positions</a></li> -->
+                                                <li><a data-toggle="tab" href="#activeorders">Active Orders</a></li>
+                                                <!-- <li><a data-toggle="tab" href="#stops">Stops</a></li>
+                                                <li><a data-toggle="tab" href="#fills">Fills</a></li> -->
+                                                <li><a data-toggle="tab" href="#orderhistory">Order History</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="positions" class="tab-pane fade in active show">
+                                                    <h3>Positions</h3>
+                                                    <p><a href="#">Login to view</a></p>
+                                                </div>
+                                                <!-- <div id="closedpositions" class="tab-pane fade">
+                                                    <h3>Menu 1</h3>
+                                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                </div> -->
+                                                <div id="activeorders" class="tab-pane fade">
+                                                    <h3>Active Orders</h3>
+                                                    <p><a href="#">Login to view</a></p>
+                                                </div>
+                                                <!-- <div id="stops" class="tab-pane fade">
+                                                    <h3>Menu 3</h3>
+                                                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                </div>
+                                                <div id="fills" class="tab-pane fade">
+                                                    <h3>Menu 3</h3>
+                                                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                                </div> -->
+                                                <div id="orderhistory" class="tab-pane fade">
+                                                    <h3>Order History</h3>
+                                                    <p><a href="#">Login to view</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--active order end-->
+                            </div>
+
+                            <!--trades start-->
+                            <div class="col-md-5">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" href="#collapseSeven">
+                                TRADE HISTORY BTC/USD
+                            </a>
+                          </h4>
+                                    </div>
+                                    <div id="collapseSeven" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <!-- <img src="assets/new3.png"> -->
+                                            <!-- trade history table start-->
+
+                                            <table class="table">
+                                                <thead>
+                                                  <tr class="orderhead">
+                                                    <th>Time</th>
+                                                    <th>Price</th>
+                                                    <th>Amount(USD)</th>
+                                                  
+                                                    
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor="let stock of stocks" class="list" >
+                                                        <td [highlighter]="stock.code">{{ stock.code }}</td>
+                                                        <td [highlighter]="stock.bid">{{ stock.bid }}</td>
+                                                        <td [highlighter]="stock.ask">{{ stock.ask }}</td>
+                                                    </tr>
+                                                  
+                                                </tbody>
+                                              </table>
+                                            <!-- trade history end-->
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--trades end-->
+                        </div>
+
+                        <!-- <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a class="accordion-toggle" data-toggle="collapse" href="#collapseSeven">
@@ -458,9 +534,9 @@
                       No active orders
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="panel panel-default">
+                        <!-- <div class="panel panel-default">
                   <div class="panel-heading">
                     <h4 class="panel-title">
                       <a class="accordion-toggle" data-toggle="collapse" href="#collapseSeven">
@@ -478,58 +554,25 @@
                         No historical orders
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                <div class="col-md-7">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a class="accordion-toggle" data-toggle="collapse" href="#collapseSeven">
-                              ORDER BOOK
-                            </a>
-                          </h4>
-                          <div class="ordic">
-                              <span class="ordicons"><i class="fa fa-minus"></i></span>
-                              <span class="ordicons"><i class="fa fa-plus"></i></span>
-                              <span class="ordicons"><i class="fa fa-bell"></i></span>
-                              <span class="ordicons"><i class="fa fa-gear"></i></span>
-                              <span class="ordicons"><i class="fa fa-search-minus"></i></span>
-                              <span class="ordicons"><i class="fa fa-search-plus"></i></span>
+                </div> -->
+                        <div class="row">
+                            <!--2nd-->
+                            <div class="col-md-7">
 
-                              </div>
+                            </div>
+                            <!--2nd end-->
+                            <div class="col-md-5">
+
+                            </div>
                         </div>
-                        <div id="collapseSeven" class="panel-collapse collapse show">
-                          <div class="panel-body">
-                            
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a class="accordion-toggle" data-toggle="collapse" href="#collapseSeven">
-                                TRADES BTC/USD
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="collapseSeven" class="panel-collapse collapse show">
-                          <div class="panel-body">
-                           <img src="assets/new3.png">
-                          </div>
-                        </div>
-                      </div>
-                </div>
+                    </div>
+
+                    <!-- accordian end-->
+
                 </div>
             </div>
-            
-          <!-- accordian end-->
-          
         </div>
-      </div>
-      </div>
     </div>
 
-<!-- <p><a [routerLink]="['/Home']">Logout</a></p> -->
+    <!-- <p><a [routerLink]="['/Home']">Logout</a></p> -->
 </section>

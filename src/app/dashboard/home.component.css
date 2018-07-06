@@ -35,18 +35,15 @@
     padding: 10px 30px;
 }
 .panel.panel-default {
-
-   
     background: #1b262d;
     border: 1px solid #1b262d;
     margin-bottom: 0.4rem;
     border-radius: 3px;
-
 }
 .panel-heading {
     border-bottom: 1px solid rgba(100, 100, 100, 0.3);
     margin: 0;
-        margin-right: 0px;
+    margin-right: 0px;
     margin-right: 0;
     height: 32px;
     line-height: 28px;
@@ -58,15 +55,11 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-size: .9rem;
-
 }
 .accordion-toggle:hover {
     text-decoration: none;
 }
-/* .panel-heading[_ngcontent-c2] .accordion-toggle[_ngcontent-c2]::after{
-    
-    float:left !important;
-} */
+
 a.sort-by { 
 	padding-right: 18px;
 	position: relative;
@@ -149,17 +142,15 @@ a.sort-by:after {
 }
 .col-md-3.coinlogo {
     display: flex;
-   
 }
 .col-md-3.coinlast {
     font-size: 12px;
     text-align: center;
-
 }
 .coinlists {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 200px;
+    height: 290px;
 }
 .col-md-3.coinvol, .col-md-3.coinlogo, .col-md-3.coinhrs, .col-md-3.coinlast{
     line-height: normal;
@@ -167,22 +158,16 @@ a.sort-by:after {
 align-items: center;
 font-size: 11px;
 }
-
-
 .selectdiv {
     position: relative;
-    /*Don't really need this just for demo styling*/
-    
     float: left;
     min-width: 200px;
     margin: 50px 33%;
   }
   
-  /* IE11 hide native button (thanks Matt!) */
   select::-ms-expand {
   display: none;
   }
-  
   .selectdiv:after {
     content: '<>';
     font: 17px "Consolas", monospace;
@@ -192,23 +177,16 @@ font-size: 11px;
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     right: 11px;
-    /*Adjust for position however you want*/
-    
     top: 18px;
     padding: 0 0 2px;
     border-bottom: 1px solid #999;
-    /*left line */
-    
     position: absolute;
     pointer-events: none;
-  }
-  
+  }  
   .selectdiv select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    /* Add some styling */
-    
     display: block;
     width: 100%;
     max-width: 320px;
@@ -308,13 +286,13 @@ a {
     .col-md-6.buy, .col-md-6.sell {
         margin-top: 10px;
     }
-    .col-md-3.ballogo img {
+    .col-md-6.ballogo img {
 
         width: 20px;
         height: 20px;
     
     }
-    .col-md-3.balfunding, .col-md-3.balmargin, .col-md-3.balexchange  {
+    .col-md-6.balexchange  {
         text-align: right;
     }
     .panel-body.new {
@@ -422,9 +400,6 @@ a {
     #home, #menu1 {
         border: 0;
     }
-    .active.show {
-        border-bottom: 1px solid #fff;
-    }
     .ordic span {
         color: white;
         padding: 10px;
@@ -433,8 +408,89 @@ a {
         padding:0px;
     }
     .col-md-3.col-sm-3.coinhrs {
-
         text-align: center;
-    
+    }
+    .nav.nav-tabs.buysell, .nav.nav-tabs.activeorders {
+        list-style-type: none;
+        display: inline-flex;
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 25px;
+    }
+    .nav.nav-tabs.buysell > li, .nav.nav-tabs.activeorders > li {
+        float: left;
+        margin-bottom: -1px;
+        padding:0px;
+    }
+    .nav.nav-tabs.buysell > li > a.active, .nav.nav-tabs.activeorders > li > a.active {
+        color: #fff;
+        cursor: default;
+        background-color: #1b262d;
+        border: 1px solid #ddd;
+        border-bottom-color: rgb(221, 221, 221);
+        border-bottom-color: #1b262d;
+    }
+    .nav.nav-tabs.buysell > li > a, .nav.nav-tabs.activeorders > li >a {
+        margin-right: 2px;
+        line-height: 1.42857143;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        position: relative;
+        display: block;
+        padding: 10px 15px;
     }
     
+    .bitwallet {
+        width: 50%;
+        float: right;
+        text-align: right;
+    }
+    .but.txt .buytxt {
+        width: 50%;
+    }
+    .but.txt {
+        display: flex;
+    }
+    .bitwallet img {
+        width: 20px;
+    }
+    .cryptotype div {
+        display: initial;
+        padding: 0 2px;
+    }
+    .col-md-6.buycol{
+        border-right:1px solid #ccc3;
+    }
+    .col-md-12.dashacc{
+        padding: 0px;
+    }
+    .panel.panel-default.graph {
+        height: 530px;
+    }
+    .panel.panel-default.ticket {
+        height: 410px;
+    }
+
+    /* order book table css*/
+    .nav.nav-tabs.activeorders {
+        margin-top: 15px;
+    }
+    .nav.nav-tabs.buysell {
+        margin-top: 15px;
+    }
+    .list td {
+        font-size: 12px;
+        text-align: center;
+    }
+    .orderhead th {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .highlight-red {
+        background-color: red;
+       
+    }
+    .highlight-green {
+        background-color: green;
+    }

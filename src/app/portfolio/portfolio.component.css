@@ -1,0 +1,249 @@
+@media screen and (min-width: 768px) {
+    .row-offcanvas {
+      position: relative;
+      -webkit-transition: all .25s ease-out;
+         -moz-transition: all .25s ease-out;
+              transition: all .25s ease-out;
+    }
+  
+    .row-offcanvas-right {
+      right: 25%;
+    }
+  
+    .row-offcanvas-left {
+      left: 25%;
+    }
+  
+    .row-offcanvas-right .sidebar-offcanvas {
+      right: -25%; /* 3 columns */
+      /* background-color: #2e3b42; */
+    }
+  
+    .row-offcanvas-left .sidebar-offcanvas {
+      left: -25%; /* 3 columns */
+      /* background-color: #2e3b42; */
+    }
+  
+    .row-offcanvas-right.active {
+      right: 0; /* 3 columns */
+    }
+  
+    .row-offcanvas-left.active {
+      left: 0; /* 3 columns */
+      background-color: #1b262d;
+    }
+  
+    .row-offcanvas-right.active .sidebar-offcanvas {
+        background-color: rgb(254, 254, 254);
+    }
+    .row-offcanvas-left.active .sidebar-offcanvas {
+        background-color:     rgb(46, 59, 66);
+    }
+  
+  .row-offcanvas .content {
+      width: 75%; /* 9 columns */
+      -webkit-transition: all .25s ease-out;
+         -moz-transition: all .25s ease-out;
+              transition: all .25s ease-out;
+  
+    }
+  
+    .row-offcanvas.active .content {
+      width: 100%; /* 12 columns */
+    }
+         
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 25%; /* 3 columns */
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .row-offcanvas {
+      position: relative;
+      -webkit-transition: all .25s ease-out;
+         -moz-transition: all .25s ease-out;
+              transition: all .25s ease-out;
+    }
+  
+    .row-offcanvas-right {
+      right: 0;
+    }
+  
+    .row-offcanvas-left {
+      left: 0;
+    }
+  
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+      right: -50%; /* 6 columns */
+    }
+  
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -50%; /* 6 columns */
+    }
+  
+    .row-offcanvas-right.active {
+      right: 50%; /* 6 columns */
+    }
+  
+    .row-offcanvas-left.active {
+      left: 50%; /* 6 columns */
+    }
+  
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 50%; /* 6 columns */
+    }
+  }
+  .portfolio {
+    padding: 100px 0 20px 0;
+    background-color: #2e3b42;
+}
+.hamburger{
+  background:none;
+  /* position:absolute; */
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  /* position:absolute; */
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.droplist {
+    display: inline-flex;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #2e3b42;
+    border-color: #fff;
+}
+.list-group-item{
+    z-index: 2;
+    color: #fff;
+    background-color: #1b262d;
+    border-color: #fff;
+}
+.col-xs-12.col-sm-9.content{
+    background-color: #1b262d;
+    margin-left: 10px;
+    color: white;
+}
+.sidebar-offcanvas{
+padding: 0 15px;
+background-color: #1b262d;
+}
+.container-fluid.port{
+padding-right: 30px !important;
+padding-left: 30px !important;
+}
+
+.list-group{
+padding: 10px 0px;
+}
+
+/* selectcss */
+select {
+    padding:3px 22px;
+    margin: 0;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+label {position:relative}
+label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:7px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+label:before {
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+.droplistmain {
+    display: flex;
+    margin-top: 30px;
+}
+.droplistmain div {
+    margin: 0 10px;
+}
+.baltxt {
+    padding-top: 20px;
+}
+.buylist {
+    margin-top: 40px;
+}
+.col-xs-12.col-sm-9.content {
+    padding-bottom: 50px;
+}
+.card{
+  background-color: #1b262d !important;
+  border:0 !important
+}
+/* .legend{
+  display:inline-block !important;
+} */
+/* .item {
+  display: flex;
+  margin: 10px 0px;
+}
+.legend .item{
+  display: flex !important;
+  margin: 10px 0 !important;
+
+} */
