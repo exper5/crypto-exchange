@@ -26,6 +26,7 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { SumPipe } from './_pipes/sum.pipe';
 import { PieDataService } from './_services/pie-data.service';
 import { TestportComponent } from './testport/testport.component';
+import { BalancesComponent } from './balances/balances.component';
 
 
 
@@ -37,6 +38,7 @@ import { TestportComponent } from './testport/testport.component';
         ReactiveFormsModule,
         HttpClientModule,
         routing,
+  
         
         ],
     declarations: [
@@ -54,6 +56,7 @@ import { TestportComponent } from './testport/testport.component';
         PieChartComponent,
         SumPipe,
         TestportComponent,
+        BalancesComponent,
        
      
     

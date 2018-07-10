@@ -7,6 +7,7 @@ import { AuthGuard } from './_guards';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestportComponent } from './testport/testport.component';
+import { BalancesComponent } from './balances/balances.component';
 
 
 
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
     { path: 'dashboard', component: HomeComponent, canActivate: [AuthGuard]  },
     { path: 'portfolio', component:PortfolioComponent},
     { path: 'test', component:TestportComponent},
+    { path: 'balances', component:BalancesComponent},
   
   
 
