@@ -81,3 +81,6 @@ footer {
 .copyright{
     background-color: grey;
 }
+.container.copyright a {
+    color: #36d7b7;
+}

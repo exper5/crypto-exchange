@@ -10,11 +10,23 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $('ul.nav li.dropdown').hover(function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-    }, function() {
-      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-    });
+    
+    $(".dropdown.funds").hover(
+      function () {
+          $('.dropdown-menu.funds').finish().slideDown('fast');
+      },
+      function () {
+          $('.dropdown-menu.funds').finish().slideUp('fast');
+      }
+  );
+  $(".dropdown.more").hover(
+    function () {
+        $('.dropdown-menu.more').finish().slideDown('fast');
+    },
+    function () {
+        $('.dropdown-menu.more').finish().slideUp('fast');
+    }
+);
   }
 
 }

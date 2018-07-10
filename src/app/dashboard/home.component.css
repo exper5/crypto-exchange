@@ -148,7 +148,7 @@ a.sort-by:after {
     text-align: center;
 }
 .coinlists {
-    overflow-y: scroll;
+    overflow-y: hidden ;
     overflow-x: hidden;
     height: 290px;
 }
@@ -493,4 +493,7 @@ a {
     }
     .highlight-green {
         background-color: green;
+    }
+    .col-md-8.col-sm-12.chart, .col-md-5.sell {
+        padding-left: 0;
     }

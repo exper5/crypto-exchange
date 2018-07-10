@@ -26,7 +26,7 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { SumPipe } from './_pipes/sum.pipe';
 import { PieDataService } from './_services/pie-data.service';
 import { TestportComponent } from './testport/testport.component';
-// import { MdMenuModule, MdButtonModule, MdIconModule, MdCardModule, MdSidenavModule } from '@angular/material';
+
 
 
 
@@ -37,7 +37,7 @@ import { TestportComponent } from './testport/testport.component';
         ReactiveFormsModule,
         HttpClientModule,
         routing,
-        // MdSidenavModule
+        
         ],
     declarations: [
         AppComponent,

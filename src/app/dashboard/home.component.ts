@@ -42,30 +42,6 @@ export class HomeComponent implements OnInit {
         }
 
         poll();
-
-
-
-        // trade history stock code
-        // for(let i=0;i<20;i++){
-        //     let tempStock1={
-        //         time : Math.ceil(Math.random()*10500),
-        //         price : Math.ceil(Math.random()*10700),
-        //         amount : Math.ceil(Math.random()*10200)
-        //     }
-
-        //     this.stocks.push(tempStock1);
-        // }
-
-        // let pollnew = ()=>{
-        //     for (var i = 0; i < this.stocks1.length; i++) {
-        //         this.stocks1[i].amount += Math.random()<.5 ? 5 : -5;
-        //         this.stocks1[i].time += Math.random()<.5 ? 5 : -5;
-        //         this.stocks1[i].price += Math.random()<.5 ? -5 : 5;
-        //     }
-        //     setTimeout(pollnew , 1000);
-        // }
-
-        // pollnew();
         
     }
 

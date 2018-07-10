@@ -1,19 +1,263 @@
-<md-card class="demo-panel">
-        <md-card-title>
-          Angular Material Sidenav Demo
-        </md-card-title>
-        <md-card-content>
-          <md-sidenav-container class="example-container">
-            <md-sidenav #sidenav class="example-sidenav">
-              Sidenav content goes here!
-            </md-sidenav>
-          
-            <div class="example-sidenav-content">
-              <button type="button" md-button (click)="sidenav.open()">
-                Open Sidenav
-              </button>
-            </div>
-          
-          </md-sidenav-container>
-        </md-card-content>
-      </md-card>
+<section class="portfolio">
+<div id="wrapper">
+  <div class="overlay"></div>
+
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+          <li class="sidebar-brand">
+              <a href="#">
+                 Brand
+              </a>
+          </li>
+          <li>
+              <a href="#">Portfolio</a>
+          </li>
+          <li>
+              <a href="#">My Profile</a>
+          </li>
+          <li>
+              <a href="#">Edit Profile</a>
+          </li>
+          <li>
+              <a href="#">Logout</a>
+          </li>
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="dropdown-header">Dropdown heading</li>
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li> -->
+          <!-- <li>
+              <a href="#">Services</a>
+          </li>
+          <li>
+              <a href="#">Contact</a>
+          </li> -->
+          <!-- <li>
+              <a href="https://twitter.com/maridlcrmn">Follow me</a>
+          </li> -->
+      </ul>
+  </nav>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+          <span class="hamb-top"></span>
+    <span class="hamb-middle"></span>
+  <span class="hamb-bottom"></span>
+      </button>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-lg-offset-2 portcontent">
+                <!--top buttons-->  
+                <div class="porttopbut">
+                  <div class="col-md-12">
+                  <div class="row">
+                    <div class="droplistmain">
+                      <div class="col-md-3">
+                    <div class="droplist">
+                        <label>
+                            <select>
+                              <option value="0">Show 0 balances</option>
+                              <option value="1">BTC</option>
+                              <option value="2">ETH</option>
+                              <option value="3">XRP</option>
+                              <option value="4">Cloak</option>
+                              <option value="5">Dent</option>
+                              <option value="6">KMD</option>
+                              <option value="7">ETC</option>
+                              <option value="8">NPXS</option>
+                              <option value="9">USDT</option>
+                              <option value="10">EOSD</option>
+                              <option value="11">QKC</option>
+                              <option value="12">XVG</option>
+                            </select>
+                        </label>
+                      </div>
+                      </div>
+                      <div class="col-md-3">
+                      <div class="secdrop">
+                          <label>
+                              <select>
+                                <option value="0">Value</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                
+                              </select>
+                          </label>
+                        </div>
+                        </div>
+                       
+                        <div class="col-md-3">
+                        <div class="thirddrop">
+                            <label>
+                                <select>
+                                  <option value="0">Select Trend</option>
+                                  <option value="1">2.2%</option>
+                                  <option value="2">2.23%</option>
+                                  <option value="3">3.2%</option>
+                                  <option value="4">4.2%</option>
+                                  <option value="5">24.2%</option>
+                                  <option value="6">32.7%</option>
+                                  <option value="7">45.2%</option>
+                                  <option value="8">58.34%</option>
+                                  
+                                </select>
+                            </label>
+                          </div>
+                          </div>
+                          <div class="col-md-3 search">
+                          <input type="text" placeholder="Search.." class="new">
+                          
+                            <i class="fa fa-search" style="cursor: auto;"></i>
+                         
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                          
+                  </div>
+                  <!--top button end-->
+                  <!--portfolio bottomcontent-->
+                  <div class="col-md-12 portbot">
+                    <div class="row">
+                      <div class="col-md-7 cryptocoins">
+                          <div class="cryptolist">
+                          <h3 class="coinlist">Coin List</h3>
+                          <table class="table striped">
+                              <thead>
+                                <tr>
+                                    <th>Currency</th>
+                                    <th>Amount</th>
+                                    <th>Value</th>
+                                    <th>Price</th>
+                                    <th>Trend</th>
+                                </tr>
+                              </thead>
+                      
+                              <tbody>
+                                <tr>
+                                  <td><img class="cryptoimg" src="assets/bitcoinimages/bitcoin.png">Bitcoin</td>
+                                  <td>0.0200</td>
+                                  <td>$4000</td>
+                                  <td>$4,21,001.00</td>
+                                  <td>9.74%</td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td><img class="cryptoimg" src="assets/bitcoinimages/achain.png">Achain</td>
+                                    <td>0.0200</td>
+                                    <td>$4000</td>
+                                    <td>$4,21,001.00</td>
+                                    <td>9.74%</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                      <td><img class="cryptoimg" src="assets/bitcoinimages/aeternity.png">Aternity</td>
+                                      <td>0.0200</td>
+                                      <td>$4000</td>
+                                      <td>$4,21,001.00</td>
+                                      <td>9.74%</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                        <td><img class="cryptoimg" src="assets/bitcoinimages/aion.png">Aion</td>
+                                        <td>0.0200</td>
+                                        <td>$4000</td>
+                                        <td>$4,21,001.00</td>
+                                        <td>9.74%</td>
+                                        
+                                      </tr>
+                                      <tr>
+                                          <td><img class="cryptoimg" src="assets/bitcoinimages/augur.png">Augur</td>
+                                          <td>0.0200</td>
+                                          <td>$4000</td>
+                                          <td>$4,21,001.00</td>
+                                          <td>9.74%</td>
+                                          
+                                        </tr>
+                                        <tr>
+                                            <td><img class="cryptoimg" src="assets/bitcoinimages/bitcoin_cash.png">Bitcoin Cash</td>
+                                            <td>0.0200</td>
+                                            <td>$4000</td>
+                                            <td>$4,21,001.00</td>
+                                            <td>9.74%</td>
+                                            
+                                          </tr>
+                                          <tr>
+                                              <td><img class="cryptoimg" src="assets/bitcoinimages/cyber_miles.png">Cyber Miles</td>
+                                              <td>0.0200</td>
+                                              <td>$4000</td>
+                                              <td>$4,21,001.00</td>
+                                              <td>9.74%</td>
+                                              
+                                            </tr>
+                                            <tr>
+                                                <td><img class="cryptoimg" src="assets/bitcoinimages/eos.png">Eos</td>
+                                                <td>0.0200</td>
+                                                <td>$4000</td>
+                                                <td>$4,21,001.00</td>
+                                                <td>9.74%</td>
+                                                
+                                              </tr>
+                                              <tr>
+                                                  <td><img class="cryptoimg" src="assets/bitcoinimages/ether.png">Ether</td>
+                                                  <td>0.0200</td>
+                                                  <td>$4000</td>
+                                                  <td>$4,21,001.00</td>
+                                                  <td>9.74%</td>
+                                                  
+                                                </tr>
+                                                <tr>
+                                                    <td><img class="cryptoimg" src="assets/bitcoinimages/litecoin.png">Litecoin</td>
+                                                    <td>0.0200</td>
+                                                    <td>$4000</td>
+                                                    <td>$4,21,001.00</td>
+                                                    <td>9.74%</td>
+                                                    
+                                                  </tr>
+                                                  <tr>
+                                                      <td><img class="cryptoimg" src="assets/bitcoinimages/nano.png">Nano</td>
+                                                      <td>0.0200</td>
+                                                      <td>$4000</td>
+                                                      <td>$4,21,001.00</td>
+                                                      <td>9.74%</td>
+                                                      
+                                                    </tr>
+                              </tbody>
+                            </table>
+                            </div>
+                        </div>
+                        <div class="col-md-5 cryptopie">
+                            <div class="cryptopiech">
+                            <h3 class="cryptpie">Coin Graph</h3>
+                            <div class='card'>
+                                <app-pie-chart [data]='data' [colours]='colours'></app-pie-chart>
+                              </div>
+                              </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!--portfolio bottomcontent end-->
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+
+</div>
+</section>
