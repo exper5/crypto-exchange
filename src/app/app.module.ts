@@ -27,6 +27,7 @@ import { SumPipe } from './_pipes/sum.pipe';
 import { PieDataService } from './_services/pie-data.service';
 import { TestportComponent } from './testport/testport.component';
 import { BalancesComponent } from './balances/balances.component';
+import { OrderModule } from './order-pipe/ngx-order.module';
 
 
 
@@ -38,6 +39,7 @@ import { BalancesComponent } from './balances/balances.component';
         ReactiveFormsModule,
         HttpClientModule,
         routing,
+        OrderModule
   
         
         ],

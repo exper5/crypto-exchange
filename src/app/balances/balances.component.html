@@ -1,0 +1,51 @@
+<section class="balances">
+<div class="container">
+                <table class="table table-striped balancetable">
+                  <thead>
+                  <tr>
+                    <th [class.active]="order === 'id'"
+                        (click)="setOrder('id')"
+                        class="mdl-data-table__cell--non-numeric">Coin <span [hidden]="reverse">▼</span>
+                        <span [hidden]="!reverse">▲</span>
+                    </th>
+                    <th [class.active]="order === 'info.name'"
+                        (click)="setOrder('info.name')"
+                        class="mdl-data-table__cell--non-numeric"
+                    >
+                      Name <span [hidden]="reverse">▼</span><span [hidden]="!reverse">▲</span>
+                    </th>
+                    <th [class.active]="order === 'info.number'"
+                        (click)="setOrder('info.number')"
+                    >
+                      Total balance <span [hidden]="reverse">▼</span><span [hidden]="!reverse">▲</span>
+                    </th>
+                    <th [class.active]="order === 'info.age'" (click)="setOrder('info.age')">
+                      Available Balance <span [hidden]="reverse">▼</span><span [hidden]="!reverse">▲</span>
+                    </th>
+                    <th [class.active]="order === 'info.age'" (click)="setOrder('info.age')">
+                      In Order <span [hidden]="reverse">▼</span><span [hidden]="!reverse">▲</span>
+                    </th>
+                    <th [class.active]="order === 'info.age'" (click)="setOrder('info.age')">
+                      BTC Value <span [hidden]="reverse">▼</span><span [hidden]="!reverse">▲</span>
+                    </th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr *ngFor="let row of collection | orderBy: order:reverse:'case-insensitive'">
+                    <td class="balimg"><img [src]='row.info.coin '></td>
+                    <td class="mdl-data-table__cell--non-numeric">{{ row.info.name }}</td>
+                    <td>{{ row.info.totalbalance }}</td>
+                    <td>{{ row.info.avaliablebalance }}</td>
+                    <td>{{ row.info.inorder }}</td>
+                    <td>{{ row.info.btcvalue }}</td>
+                    <td><a href="#"><span class="dep">Deposit</span></a></td>
+                    <td><a href="#"><span class="dep">Withdrawal</span></a></td>
+                    <td><a href="#"><span class="dep">Trade</span></a></td>
+                  </tr>
+                  </tbody>
+                </table>
+             </div>
+  </section>
