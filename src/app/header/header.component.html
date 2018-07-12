@@ -5,7 +5,7 @@
             <div class="row">
           <div class="col-md-6"></div>
           <div class="col-md-6 topbut">
-    <a class="toplogin" data-toggle="modal" data-target="#myModal">Login </a>
+    <a class="toplogin" data-toggle="modal" data-target="#myModal" id="#myModalbut">Login </a>
     <a class="topreg" data-toggle="modal" data-target="#myModal1">Sign Up</a>
     </div>
     </div>
@@ -25,15 +25,15 @@
       <li class="dropdown funds">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Funds <b class="caret"></b></a>
         <ul class="dropdown-menu funds" style="display: none;">
-          <li ><a href="#">Balances</a></li>
-          <li><a href="#">Deposits</a></li>
+          <li ><a [routerLink]="['/balances']">Balances</a></li>
+          <li><a a [routerLink]="['/deposit']">Deposits</a></li>
           <li><a href="#">Withdrawals</a></li>
           <li><a href="#">Transaction History</a></li>
           
         </ul>
       </li>
     </ul>
-    <li><a href="#work">Features</a></li>
+    <li ><a [routerLink]="['/portfolio']">Portfolio</a></li>
     <li *ngIf="isLoggedIn"><a href="#about">About</a></li>
     <ul class="nav navbar-nav">
         <li class="dropdown more">

@@ -21,8 +21,20 @@ export class AuthenticationService {
             }));
     }
 
+
+    getIsLoggedIn(){
+        if(localStorage.getItem('currentUser')){
+            console.log("User is logged in")
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
     logout() {
         // remove user from local storage to log user out
         localStorage.removeItem('currentUser');
+        console.log('user logged out');
     }
 }

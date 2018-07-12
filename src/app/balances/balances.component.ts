@@ -9,6 +9,20 @@ import { OrderPipe } from '../order-pipe/ngx-order.pipe';
 export class BalancesComponent implements OnInit {
   order: string = 'info.name';
   reverse: boolean = false;
+  _listFilter: string;
+
+  get listFilter(): string{
+    return this._listFilter;
+    }
+    set listFilter(value:string){
+      this._listFilter= value;
+
+      console.log("Value of list filter is "+ this._listFilter);
+      this.filteredProducts= (this.listFilter.length!=0)? this.performFilter(this.listFilter): this.collection;
+      console.log(this.filteredProducts);
+  }
+
+  filteredProducts:any[];
   collection: any[] = [
     {
       id: 1,
@@ -68,8 +82,17 @@ export class BalancesComponent implements OnInit {
    *
    * @param {OrderPipe} orderPipe
    */
-  constructor(private orderPipe: OrderPipe) {console.log(this.orderPipe.transform(this.collection, this.order)); }
+  constructor(private orderPipe: OrderPipe) {
+    console.log(this.orderPipe.transform(this.collection, this.order));
+    this.filteredProducts=this.collection;
+    //this.listFilter='cart';
+   }
 
+  performFilter(filterBy: string): any[]{
+    filterBy =filterBy.toLocaleLowerCase();
+    return this.collection.filter((product: any)=>
+    product.info.name.toLocaleLowerCase().indexOf (filterBy) !== -1);
+}
   ngOnInit() {
   }
   setOrder(value: string) {

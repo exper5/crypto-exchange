@@ -1,6 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule }    from '@angular/forms';
+import { ReactiveFormsModule, FormsModule }    from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // used to create fake backend
@@ -28,6 +28,8 @@ import { PieDataService } from './_services/pie-data.service';
 import { TestportComponent } from './testport/testport.component';
 import { BalancesComponent } from './balances/balances.component';
 import { OrderModule } from './order-pipe/ngx-order.module';
+import { DepositComponent } from './deposit/deposit.component';
+
 
 
 
@@ -39,7 +41,8 @@ import { OrderModule } from './order-pipe/ngx-order.module';
         ReactiveFormsModule,
         HttpClientModule,
         routing,
-        OrderModule
+        OrderModule,
+        FormsModule
   
         
         ],
@@ -59,6 +62,8 @@ import { OrderModule } from './order-pipe/ngx-order.module';
         SumPipe,
         TestportComponent,
         BalancesComponent,
+        DepositComponent,
+ 
        
      
     

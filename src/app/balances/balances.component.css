@@ -27,3 +27,19 @@ table {
   background-color: #293e4a;
   color: white;
 }
+.fa.fa-search {
+
+  float: right;
+  margin-right: 6px;
+  margin-top: -23px;
+  position: relative;
+  z-index: 2;
+  color: #848484e6;
+
+}
+.col-md-4.bal input {
+  width: 100%;
+}
+.col-md-4.bal {
+  margin-bottom: 50px;
+}

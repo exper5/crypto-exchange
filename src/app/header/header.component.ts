@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../_services/authentication.service';
 declare var $ :any;
 @Component({
   selector: 'app-header',
@@ -6,8 +7,10 @@ declare var $ :any;
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+    isLoggedIn:boolean
+  constructor(private authenticationService: AuthenticationService) {
+      this.isLoggedIn=this.authenticationService.getIsLoggedIn();
+   }
 
   ngOnInit() {
     
@@ -27,6 +30,9 @@ export class HeaderComponent implements OnInit {
         $('.dropdown-menu.more').finish().slideUp('fast');
     }
 );
+
+
+
   }
   
 

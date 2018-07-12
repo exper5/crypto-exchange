@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 declare var $ :any;
 import { User } from '../_models';
-import { UserService } from '../_services';
+import { UserService, AuthenticationService } from '../_services';
 import {Observable} from 'rxjs';
 
 
@@ -18,8 +18,10 @@ export class HomeComponent implements OnInit {
     users: User[] = [];
     stocks:any[]=[];
     stocks1:any[]=[];
-
+    
+    logout: void;
     constructor(private userService: UserService) {
+        // this.logout=this.authenticationService.logout();
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
         for(let i=0;i<20;i++){
