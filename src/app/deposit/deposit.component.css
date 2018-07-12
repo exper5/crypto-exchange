@@ -1,0 +1,19 @@
+.deposit {
+    padding: 100px 0;
+}
+
+.depositdrop{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    height: 200px;
+    }
+    .fa.fa-caret-down, .fa-caret-up.fa {
+        float: right;
+        vertical-align: middle;
+        padding: 5px 0px;
+    }
+    .depcoin {
+        border: 1px solid #ccc;
+        padding: 5px 26px;
+    }
