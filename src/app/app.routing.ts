@@ -12,6 +12,7 @@ import { DepositComponent } from './deposit/deposit.component';
 
 
 
+
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent},
     { path: 'login', component: LoginComponent },
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
     { path: 'portfolio', component:PortfolioComponent},
     { path: 'test', component:TestportComponent},
     { path: 'balances', component:BalancesComponent},
+   
     { path: 'dashboard', component: HomeComponent, canActivate: [AuthGuard]  },
   
 

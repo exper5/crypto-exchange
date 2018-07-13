@@ -4,7 +4,7 @@
         <div class="col-md-12">
             <div class="row">
           <div class="col-md-6"></div>
-          <div class="col-md-6 topbut">
+          <div class="col-md-6 topbut" *ngIf="!isLoggedIn">
     <a class="toplogin" data-toggle="modal" data-target="#myModal" id="#myModalbut">Login </a>
     <a class="topreg" data-toggle="modal" data-target="#myModal1">Sign Up</a>
     </div>
@@ -22,8 +22,8 @@
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
    `<ul class="nav navbar-nav">
-      <li class="dropdown funds">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Funds <b class="caret"></b></a>
+      <li class="dropdown funds"  >
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" *ngIf="isLoggedIn">Funds <b class="caret"></b></a>
         <ul class="dropdown-menu funds" style="display: none;">
           <li ><a [routerLink]="['/balances']">Balances</a></li>
           <li><a a [routerLink]="['/deposit']">Deposits</a></li>
@@ -34,27 +34,38 @@
       </li>
     </ul>
     <li ><a [routerLink]="['/portfolio']">Portfolio</a></li>
-    <li *ngIf="isLoggedIn"><a href="#about">About</a></li>
-    <ul class="nav navbar-nav">
+    <li><a href="#about">About</a></li>
+    <!-- <ul class="nav navbar-nav">
         <li class="dropdown more">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
           <ul class="dropdown-menu more" style="display: none;">
             <li ><a href="#">HOW IT WORKS</a></li>
             <li><a href="#">MARKET STATISTICS</a></li>
             <li><a href="#">ANNOUNCEMENTS</a></li>
-            <!-- <li class="divider"></li> -->
+            <!-- <li class="divider"></li>
             <li><a href="#">CHANGE LOG</a></li>
-            <!-- <li class="divider"></li> -->
+            <!-- <li class="divider"></li> 
             <li><a href="#">CAREERS</a></li>
             <li><a href="#">SUPPORT CENTER</a></li>
             <li><a href="#">NEWSLETTER</a></li>
             <li><a href="#">MEDIA CONTACT</a></li>
           </ul>
         </li>
-      </ul>
-    <!-- <li><a href="#careers">EOS.IO</a></li>
-    <li><a href="#careers">Hackathon</a></li> -->
+      </ul> -->
+     
+   <!-- <li><a href="#careers">Hackathon</a></li> -->
     <li><a href="#contact">Contact</a></li>
+    <ul class="nav navbar-nav" >
+        <li class="dropdown more  profile">
+            <a href="#" *ngIf="isLoggedIn">
+              <div class="profile"><i class="fa fa-user" aria-hidden="true"></i></div></a>
+          <ul class="dropdown-menu more" style="display: none;">
+            <li><a (click)="myMethod()" [routerLink]="['/Home']" >Logout</a></li>
+            </ul>
+            </li>
+            </ul>
+            
+ 
     
   </ul>
   </div>

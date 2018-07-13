@@ -4,7 +4,7 @@ declare var $ :any;
 import { User } from '../_models';
 import { UserService, AuthenticationService } from '../_services';
 import {Observable} from 'rxjs';
-
+import { Router, ActivatedRoute } from '@angular/router';
 
 
 
@@ -18,9 +18,16 @@ export class HomeComponent implements OnInit {
     users: User[] = [];
     stocks:any[]=[];
     stocks1:any[]=[];
-    
-    logout: void;
-    constructor(private userService: UserService) {
+    logout: boolean=false;
+    returnUrl: string;
+   
+    constructor(
+        private userService: UserService, 
+        private authenticationService: AuthenticationService,
+        private route: ActivatedRoute,
+        private router: Router
+    )
+         {
         // this.logout=this.authenticationService.logout();
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
@@ -78,6 +85,11 @@ export class HomeComponent implements OnInit {
           //change background color of table
           
     }
+    myMethod(event){
+        this.authenticationService.logout();
+        
+        this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/home';
+      } 
 
     deleteUser(id: number) {
         this.userService.delete(id).pipe(first()).subscribe(() => { 

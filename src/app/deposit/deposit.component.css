@@ -1,12 +1,14 @@
 .deposit {
     padding: 100px 0;
+    background-color: #2e3b42;
+    color:white;
 }
 
 .depositdrop{
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px 8px #888888;
-    height: 200px;
+    height: 350px;
     }
     .fa.fa-caret-down, .fa-caret-up.fa {
         float: right;
@@ -17,3 +19,43 @@
         border: 1px solid #ccc;
         padding: 5px 26px;
     }
+    .depcoins {
+        list-style-type: none;
+        padding: 0;
+        height: 186px;
+        overflow-y: scroll;
+    }
+    .depcoins li img {
+        width: 20px;
+        margin-right: 5px;
+    }
+    .fa.fa-search {
+        float: right;
+        margin-right: 6px;
+        margin-top: -23px;
+        position: relative;
+        z-index: 2;
+        color: #848484e6;
+    }
+    #myDIV input{width: 100%}
+    #myDIV {
+        border: 1px solid #ccc;
+        margin-top: 5px;
+    }
+    .depcoins li {
+    list-style-type: none;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+    margin: 0;
+}
+.order.history {
+    border: 1px solid;
+    padding: 10px;
+    -webkit-box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #888888;
+    height: 350px;
+    text-align: center;
+}

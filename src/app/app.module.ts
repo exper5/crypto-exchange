@@ -35,6 +35,7 @@ import { DepositComponent } from './deposit/deposit.component';
 
 
 
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -63,6 +64,7 @@ import { DepositComponent } from './deposit/deposit.component';
         TestportComponent,
         BalancesComponent,
         DepositComponent,
+       
  
        
      

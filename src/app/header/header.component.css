@@ -244,3 +244,8 @@
   margin:0 !important;
   padding:0 !important;
 }
+.dropdown.more.profile {
+  /* top: 15px; */
+  font-size: 18px;
+  color: white;
+}

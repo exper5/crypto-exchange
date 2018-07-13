@@ -4,3 +4,22 @@
 a{
     outline:none !important;
 }
+.preloader_image {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url(assets/preloader.gif) no-repeat 50% 50% transparent;
+    margin: -64px 0 0 -64px;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 13000;
+    height: 100%;
+}

@@ -3,6 +3,8 @@ table {
   }
   .balances {
     padding: 200px 0px;
+    background-color: #2e3b42;
+    color:white;
 }
 .dep {
   display: inline-block;

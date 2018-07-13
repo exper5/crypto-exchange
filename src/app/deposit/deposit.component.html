@@ -5,20 +5,29 @@
         <div class="depositdrop">
             <div class="depcoin">
                <div class="showcoins"><span>Select coin/token to deposit</span><i class="fa fa-caret-down"></i> </div>
-                <div id="myDIV" style="display:none">
-                  <input type="text" placeholder="search">
-                  <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>4</li>
-                    <li>5</li>
+              </div>
+               <div id="myDIV" style="display:none">
+                  <input type="text" placeholder="search"  [(ngModel)]= 'listFilter'>
+                  <i class="fa fa-search"></i>
+                  
+                  <ul class="depcoins" >
+                    <li *ngFor="let row of filteredProducts"><img [src]='row.info.coin '> {{ row.info.name }}</li>
+                   
                   </ul>
                 </div>
-              </div>
+              
           </div>
       </div>
       <div class="col-md-6 depositsecond">
-
+        <!-- <div class="historytopbar">
+            <span class="ordertopbar">History</span>
+            <span class="depdidnot">Deposit did not arrive? </span>
+        </div> -->
+        <div class="order history">
+         
+          <img src="assets/zups.png">
+          <p>You have no deposit history.</p>
+          </div>
       </div>
     </div>
   </div>
