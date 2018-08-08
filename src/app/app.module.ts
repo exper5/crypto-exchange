@@ -29,6 +29,7 @@ import { TestportComponent } from './testport/testport.component';
 import { BalancesComponent } from './balances/balances.component';
 import { OrderModule } from './order-pipe/ngx-order.module';
 import { DepositComponent } from './deposit/deposit.component';
+import { WithdrawalsComponent } from './withdrawals/withdrawals.component';
 
 
 
@@ -64,6 +65,7 @@ import { DepositComponent } from './deposit/deposit.component';
         TestportComponent,
         BalancesComponent,
         DepositComponent,
+        WithdrawalsComponent,
        
  
        

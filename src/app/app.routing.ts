@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TestportComponent } from './testport/testport.component';
 import { BalancesComponent } from './balances/balances.component';
 import { DepositComponent } from './deposit/deposit.component';
+import { WithdrawalsComponent } from './withdrawals/withdrawals.component';
 
 
 
@@ -22,7 +23,7 @@ const appRoutes: Routes = [
     { path: 'portfolio', component:PortfolioComponent},
     { path: 'test', component:TestportComponent},
     { path: 'balances', component:BalancesComponent},
-   
+    { path: 'withdrawals', component:WithdrawalsComponent},
     { path: 'dashboard', component: HomeComponent, canActivate: [AuthGuard]  },
   
 
